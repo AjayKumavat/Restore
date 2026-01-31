@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="Entities\" />
+    <Folder Include="Middleware\" />
   </ItemGroup>
 
   <ItemGroup>
