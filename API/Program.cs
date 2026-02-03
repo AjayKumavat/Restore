@@ -21,7 +21,12 @@ var app = builder.Build();
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseCors(opt =>
 {
-    opt.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:3000"); 
+    //AllowCredentials() allows the client to send credentials (cookies, auth headers, TLS certs) with cross-origin requests.
+    //Without AllowCredentials() 
+    //1) Cookies will NOT be sent
+    //2) Session-based auth will fail
+    //3) fetch(..., { credentials: 'include' }) won’t work
+    opt.AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithOrigins("https://localhost:3000"); 
 });
 
 app.MapControllers();

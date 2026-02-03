@@ -4,7 +4,13 @@ import { toast } from "react-toastify";
 import { router } from "../routes/Routes";
 
 const customBaseQuery = fetchBaseQuery({
-    baseUrl: 'https://localhost:5001/api'
+    baseUrl: 'https://localhost:5001/api',
+    //credentails: 'include' => tells the browser, to Always send credentials (cookies, auth headers, TLS certs) with this request — even for cross-origin calls
+    //Without this line:
+    // Cookies are not sent
+    // Session / cookie-based auth fails
+    // User appears logged out
+    credentials: 'include' 
 });
 
 type ErrorResponse = | string | {title: string} | {errors: string};

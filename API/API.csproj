@@ -8,7 +8,9 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
+    <Folder Include="DTOs\" />
     <Folder Include="Entities\" />
+    <Folder Include="Extensions\" />
     <Folder Include="Middleware\" />
   </ItemGroup>
 
