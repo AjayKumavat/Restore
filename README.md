@@ -2,7 +2,7 @@
 ### Built with .NET Web API + React (TypeScript) + Vite + Redux
 
 > A modern, production-ready e-commerce web application built end-to-end using **ASP.NET Web API** and **React (TypeScript)**.  
-> This project is my personal implementation while following and enhancing concepts from a professional Udemy course.
+> This project is my personal implementation.
 
 ---
 
