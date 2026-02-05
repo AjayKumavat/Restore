@@ -12,6 +12,7 @@
     <Folder Include="Entities\" />
     <Folder Include="Extensions\" />
     <Folder Include="Middleware\" />
+    <Folder Include="RequestHelper\" />
   </ItemGroup>
 
   <ItemGroup>
